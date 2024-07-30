@@ -12,8 +12,8 @@ import {
 
 const SocialProfile = () => {
   return (
-    <div className="bg-gray-300 p-6 rounded-2xl shadow-2xl mb-6">
-      <h2 className="text-2xl font-semibold mb-4">Social Profiles</h2>
+    <div className="bg-gray-200 p-6 rounded-2xl shadow-2xl mb-6 hover:bg-gray-400 ">
+      <h2 className="text-2xl font-bold mb-4 text-[#15445a]">Social Profiles</h2>
       <div className="flex space-x-4">
         {/* LinkedIn */}
         <a

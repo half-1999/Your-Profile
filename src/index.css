@@ -233,4 +233,6 @@
   }
 }
 
-
+html {
+  scroll-behavior: smooth;
+}

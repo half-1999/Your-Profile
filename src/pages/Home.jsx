@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, Routes, Route, useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import BlogPage from "./BlogPage";
 import Contact from "./ContactPage";
@@ -12,35 +12,50 @@ import Navbar from "../Components/Navbar";
 import PageNotFound from "./404";
 import BlogDetailPage from "./BlogDetails";
 import ProjectsDetailPage from "./ProjectDetail";
+import SocialMediaIcons from "./SocialMediaIcons";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const contentRef = useRef(null);
 
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsSidebarOpen(false);
+  }, [pathname]);
+
+  
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 h-screen">
+    <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 h-screen bg-[#131312] w-full">
       {/* Left Sidebar */}
       <div
-        className={`md:col-span-2 lg:col-span-1 md:col-start-1 md:row-start-1 bg-[#03A9F4] p-4 overflow-y-auto ${
-          isSidebarOpen ? "block" : "hidden"
-        } md:block`}
+        className={`fixed inset-y-0 left-0 w-64 bg-[#131312] p-4 overflow-y-auto transform transition-transform duration-300 ease-in-out ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } md:translate-x-0 z-50`} // Added z-index here
       >
         <Sidebar />
         <div className="mt-5">
           <Navbar />
         </div>
+        <div className="mt-5 fixed bottom-5 right-2.5">
+          <SocialMediaIcons/>
+        </div>
       </div>
 
       {/* Hamburger Menu Icon (visible on mobile) */}
-      <div className="md:hidden">
+      <div className="md:hidden p-1">
         <button
           onClick={toggleSidebar}
-          className="block text-gray-800 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+          className="block text-white focus:outline-none "
         >
           <svg
             className="w-8 h-8"
@@ -59,8 +74,9 @@ export default function Home() {
       </div>
 
       {/* Right Content Area */}
-      <div className="md:col-span-3 lg:col-span-4 md:row-start-1 p-4 overflow-y-auto bg-[#03A9F4]">
-        <div className="space-y-4">
+      <div className="md:col-span-3 lg:col-span-4 md:row-start-1 p-2 overflow-y-auto bg-white h-[98%] md:ml-[60%] lg:ml-[24%] min-w-full rounded-lg m-2 w-full sidebar" ref={contentRef}
+>
+        <div className="space-y-1">
           {/* Route content based on URL */}
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -78,8 +94,32 @@ export default function Home() {
             <Route path="*" element={<navigate to="/404" />} />
             <Route path="/404" element={<PageNotFound />} />
           </Routes>
+          <WhatsAppButton 
+              phoneNumber="+91-8445878532" 
+              message="Hello Aman Sharma, I have a Query!"
+            />
         </div>
       </div>
+      <style>
+        {`
+          .sidebar::-webkit-scrollbar {
+            width: 12px;
+          }
+
+          .sidebar::-webkit-scrollbar-track {
+            background: #131312;
+          }
+
+          .sidebar::-webkit-scrollbar-thumb {
+            background: #131312;
+            border-radius: 10px;
+          }
+
+          .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #131312;
+          }
+        `}
+      </style>
     </div>
   );
 }

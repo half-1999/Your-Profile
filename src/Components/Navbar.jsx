@@ -64,30 +64,30 @@ const Navbar = () => {
       icon: AiOutlineFundProjectionScreen,
       color: "text-purple-500",
     },
-    {
-      to: "/work-experience",
-      text: "WORK EXPERIENCE",
-      icon: AiOutlineFileText,
-      color: "text-red-500",
-    },
+    // {
+    //   to: "/work-experience",
+    //   text: "WORK EXPERIENCE",
+    //   icon: AiOutlineFileText,
+    //   color: "text-red-500",
+    // },
     {
       to: "/blog",
       text: "BLOG",
       icon: AiOutlineFileText,
       color: "text-yellow-500",
     },
-    {
-      to: "/contact",
-      text: "CONTACT",
-      icon: AiOutlineMail,
-      color: "text-indigo-500",
-    },
+    // {
+    //   to: "/contact",
+    //   text: "CONTACT",
+    //   icon: AiOutlineMail,
+    //   color: "text-indigo-500",
+    // },
   ];
 
   const adminLink = (
     <Link
       to="/admin"
-      className={`flex items-center p-2 rounded-md hover:bg-gray-400 ${
+      className={`flex items-center p-2 rounded-md hover:bg-gradient-to-t from-white to-black ${
         activeTab === "/admin" ? "bg-gray-400 font-bold" : "bg-gray-300"
       }`}
       onClick={() => handleSetActiveTab("/admin")}
@@ -105,21 +105,23 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="space-y-3 ">
+      <nav className="space-y-3 z-100">
         {/* Render dynamic navigation links */}
         {navLinks.map((link, index) => (
           <Link
             key={index}
             to={link.to}
-            className={`flex items-center p-2 rounded-md hover:bg-gray-400 ${
+            className={`flex items-center p-2 rounded-md hover:bg-black hover:ml-5 duration-700 ${
               activeTab === link.to
-                ? "bg-[#03A9F4] font-bold"
-                : "bg-[#fff] font-semibold"
+                ? "bg-[#000] font-bold ml-5"
+                : "bg-[#131312] font-semibold"
             }`}
             onClick={() => handleSetActiveTab(link.to)}
           >
-            <link.icon className={`mr-2 ${link.color}`} />
-            {link.text}
+            <link.icon className={`mr-2 ${link.color} text-xl`} />
+            <span className="text-white text-sm">
+                {link.text}
+            </span>
           </Link>
         ))}
 

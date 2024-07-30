@@ -11,15 +11,15 @@ import { companies } from "../utils/data";
 const WorkExperiencePage = () => {
   return (
     <div className="py-5">
-      <div className="bg-white p-6 rounded-2xl shadow-2xl mb-6">
-        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+      <div className="bg-gray-300 p-6 rounded-2xl shadow-2xl mb-6">
+        <h2 className="text-3xl font-bold mb-4 flex items-center text-[#15445a]">
           <FaBriefcase className="mr-2" /> Work Experience
         </h2>
         <div className="space-y-6 ">
           {companies.map((company) => (
             <div
               key={company.id}
-              className=" p-4 rounded-2xl shadow-2xl bg-gray-300"
+              className=" p-4 rounded-2xl shadow-2xl bg-gray-200"
             >
               <h3 className="text-xl font-semibold flex items-center">
                 <FaBuilding className="mr-2" /> {company.name}
