@@ -62,7 +62,7 @@ const BlogPage = () => {
             <img
                   src={blog.image}
                   alt={`${blog.title}`}
-                  className="w-full h-[400px] object-cover rounded-lg"
+                  className="w-full bg-contain bg-no-repeat h-[400px] rounded-lg"
                 />
               <h3 className="text-xl font-bold mb-2">
                 {blog.title}

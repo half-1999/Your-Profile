@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUser, FaBriefcase, FaGraduationCap, FaTrophy, FaDocker, FaJsSquare, FaAws, FaBuilding, FaCalendarAlt, FaTasks } from "react-icons/fa";
+import { FaUser, FaBriefcase, FaGraduationCap, FaTrophy, FaDocker, FaJsSquare, FaAws, FaBuilding, FaCalendarAlt, FaTasks, FaCode } from "react-icons/fa";
 import Testimonials from "../Components/About/Testimonials";
 import { introductionData } from "../utils/data";
 import { AiFillHtml5, AiFillDatabase, AiOutlineApi } from "react-icons/ai";
@@ -22,7 +22,8 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { BsFillGearFill } from "react-icons/bs";
-
+import { VscVscodeInsiders } from "react-icons/vsc";
+import Resume from '../Components/About/Resume'
 const AboutPage = () => {
   return (
     <div className="bg-gray-100">
@@ -92,8 +93,8 @@ const AboutPage = () => {
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
             {/* Skill Cards */}
             {[
-              { icon: <SiTypescript className="text-blue-600 text-xl" />, label: 'TypeScript' },
               { icon: <FaJsSquare className="text-yellow-400 text-xl" />, label: 'JavaScript' },
+              { icon: <SiTypescript className="text-blue-600 text-xl" />, label: 'TypeScript' },
               { icon: <AiFillDatabase className="text-black text-xl" />, label: 'SQL' },
               { icon: <DiReact className="text-blue-600 text-xl" />, label: 'React' },
               { icon: <DiNodejsSmall className="text-green-600 text-xl" />, label: 'Node.js' },
@@ -107,19 +108,14 @@ const AboutPage = () => {
               { icon: <SiNextdotjs className="text-black text-xl" />, label: 'Next.js' },
               { icon: <AiOutlineApi className="text-black text-xl" />, label: 'WebSockets' },
               { icon: <SiElectron className="text-black text-xl" />, label: 'Electron' },
-              { icon: <AiOutlineApi className="text-black text-xl" />, label: 'Phaser' },
-              { icon: <SiD3Dotjs className="text-black text-xl" />, label: 'D3.js' },
-              { icon: <SiRedis className="text-red-600 text-xl" />, label: 'Redis' },
-              { icon: <BsFillGearFill className="text-blue-50 text-xl" />, label: 'VSCode' },
+              { icon: <VscVscodeInsiders className="text-blue-500 text-xl" />, label: 'VSCode' },
               { icon: <SiPostman className="text-orange-500 text-xl" />, label: 'Postman' },
-              { icon: <FaDocker className="text-blue-600 text-xl" />, label: 'Docker' },
-              { icon: <BsFillGearFill className="text-blue-600 text-xl" />, label: 'Jenkins' },
               { icon: <FaAws className="text-orange-500 text-xl" />, label: 'AWS' },
               { icon: <SiAngular className="text-red-600 text-xl" />, label: 'Angular' },
             ].map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-3 hover:bg-gray-200 p-2 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+                className="flex items-center space-x-3 hover:bg-gray-200 p-2 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 border"
               >
                 {skill.icon}
                 <span className="text-black text-md">{skill.label}</span>

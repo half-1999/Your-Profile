@@ -700,7 +700,8 @@ export const introductionData = {
   name: "Aman Sharma",
   profession: "Full-Stack Developer",
   specialization: "MERN Stack",
-    "summary": "Hi, I'm Aman Sharma, a dedicated Full-Stack Developer specializing in the MERN stack. With a solid foundation in web development, game development, and software engineering, I have consistently delivered high-quality projects that meet and exceed client expectations. My expertise spans across HTML5, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. I am proficient in developing robust and scalable web applications, crafting engaging and interactive games using Construct 3, and managing complex software projects. My passion for technology and continuous learning drives me to stay updated with the latest trends and advancements in the tech industry, ensuring that I bring innovative solutions to the table. I am adept at problem-solving, collaborating with cross-functional teams, and committed to delivering exceptional user experiences.",
+  summary: "Hi, I'm Aman Sharma, a passionate Full-Stack Developer with over two years of experience in the dynamic world of web and software development. Specializing in the MERN stack, I bring a deep understanding of HTML5, CSS, JavaScript, React, Node.js, Express.js, and MongoDB to every project, ensuring that the solutions I craft are robust, scalable, and optimized for the best user experience. My expertise extends to game development using Construct 3, where I have crafted engaging and interactive games. I am also proficient in managing complex software projects, leveraging my technical expertise and problem-solving abilities to deliver high-quality results that meet and exceed client expectations. Driven by a relentless passion for technology and a commitment to continuous learning, I stay at the forefront of industry trends, infusing innovation into my work. My strong points include my ability to learn quickly and adapt to new technologies with ease. I excel in grasping new concepts and integrating them into my projects efficiently. I am adept at collaborating with cross-functional teams, ensuring that every project benefits from diverse perspectives and expertise. My ultimate goal is to deliver exceptional user experiences that surpass expectations."
+,
   education: [
     {
       institution: "AKTU University",
@@ -800,8 +801,8 @@ export const resumeData = {
     },
   ],
   skills: [
-    "JavaScript",
     "TypeScript",
+    "JavaScript",
     "SQL",
     "React",
     "Node.js",
@@ -831,6 +832,11 @@ export const resumeData = {
     "Inventory Management System",
   ],
   certifications: [
+    "Certified MERN Stack Developer",
+    "Certified JavaScript Developer",
+    "AWS Certified Solutions Architect",
+  ],
+  interests: [
     "Certified MERN Stack Developer",
     "Certified JavaScript Developer",
     "AWS Certified Solutions Architect",

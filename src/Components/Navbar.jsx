@@ -71,8 +71,8 @@ const Navbar = () => {
     //   color: "text-red-500",
     // },
     {
-      to: "/blog",
-      text: "BLOG",
+      to: "https://day2nightcoding.onrender.com/",
+      text: "BLOGS",
       icon: AiOutlineFileText,
       color: "text-yellow-500",
     },

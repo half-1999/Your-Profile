@@ -17,7 +17,7 @@ const SocialProfile = () => {
       <div className="flex space-x-4">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/"
+          href="linkedin.com/in/aman-sharma-518597258"
           target="_blank"
           rel="noopener noreferrer"
           className="text-indigo-600 hover:text-indigo-700"
