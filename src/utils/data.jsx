@@ -33,6 +33,9 @@ import HTB2 from '../assets/HTB2.png'
 import MQ2 from '../assets/MQ2.png'
 import RPORT2 from '../assets/RPORT2.png'
 import RPORT3 from '../assets/RPORT3.png'
+import Blog1 from '../assets/Blog1.png'
+import Blog2 from '../assets/Blog2.png'
+import Blog3 from '../assets/Blog3.png'
 
 
 export const projects = [
@@ -363,31 +366,20 @@ export const projects = [
   //     },
   //   ],
   // },
-  // {
-  //   _id: 13,
-  //   title: "Blog Platform",
-  //   category: "Web Development",
-  //   description: "Blogging site with markdown support and user authentication.",
-  //   technologies: "React, Node.js, Express, Markdown",
-  //   image: "https://via.placeholder.com/300x200?text=Blog+Platform",
-  //   stats: {
-  //     monthlyViews: 2000,
-  //     downloads: 600,
-  //     likes: 110,
-  //   },
-  //   comments: [
-  //     {
-  //       id: 1,
-  //       user: "Sophia Brown",
-  //       comment: "Easy to write and publish articles. Love it!",
-  //     },
-  //     {
-  //       id: 2,
-  //       user: "Daniel Clark",
-  //       comment: "Markdown editor is very convenient.",
-  //     },
-  //   ],
-  // },
+  {
+    _id: 13,
+    title: "Day2Night Coding Blog ",
+    category: "Software Development",
+    description: "Blogging site with markdown support and user authentication with Admin panel",
+    technologies: "React, Node.js, Express, Firebase, GoogleAuth, Javascript",
+    image: Blog1,
+    images: [Blog1, Blog2, Blog3],    stats: {
+      monthlyViews: 2000,
+      downloads: 600,
+      likes: 110,
+    },
+    
+  },
   {
     _id: 14,
     title: "Portfolio Site",
