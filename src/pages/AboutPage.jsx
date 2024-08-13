@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUser, FaBriefcase, FaGraduationCap, FaTrophy, FaDocker, FaJsSquare, FaAws, FaBuilding, FaCalendarAlt, FaTasks, FaCode } from "react-icons/fa";
+import { FaUser, FaBriefcase, FaGraduationCap, FaTrophy, FaDocker, FaJsSquare, FaAws, FaBuilding, FaCalendarAlt, FaTasks, FaCode, FaDownload } from "react-icons/fa";
 import Testimonials from "../Components/About/Testimonials";
 import { introductionData } from "../utils/data";
 import { AiFillHtml5, AiFillDatabase, AiOutlineApi } from "react-icons/ai";
@@ -25,6 +25,9 @@ import { BsFillGearFill } from "react-icons/bs";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import Resume from '../Components/About/Resume'
 const AboutPage = () => {
+  const handleResume = () => {
+    window.open('https://drive.google.com/file/d/1YskO4VNHZEvAMU00c5eSoaYK69NHr2gk/view?usp=sharing')
+  }
   return (
     <div className="bg-gray-100">
       {/* Introduction */}
@@ -32,8 +35,13 @@ const AboutPage = () => {
         
         <img src="src/assets/Banner.jpg" className="rounded-lg mb-5"/>
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold flex items-center text-[#15445a]">
-            <FaBriefcase className="mr-3" /> Professional Journey
+          <h3 className="text-xl font-semibold flex items-center justify-between text-[#15445a]">
+            <div className="flex">
+              <FaBriefcase className="mr-3 mt-1" /> Professional Journey
+            </div>
+            <div className="" onClick={handleResume}>
+              <FaDownload className="mr-3 cursor-pointer text-blue-600 hover:text-red-600 text-2xl hover:text-3xl duration-500"  title="Resume" /> 
+            </div>
           </h3>
           <div className="space-y-2 shadow-xl p-1 rounded-md">
             <p className=" text-md text-justify">
