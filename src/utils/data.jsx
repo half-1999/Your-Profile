@@ -37,6 +37,14 @@ import Blog1 from '../assets/Blog1.png'
 import Blog2 from '../assets/Blog2.png'
 import Blog3 from '../assets/Blog3.png'
 
+import CP1 from '../assets/CP1.png'
+import CP2 from '../assets/CP2.png'
+import CP3 from '../assets/CP3.png'
+import CP4 from '../assets/CP4.png'
+import CP5 from '../assets/CP5.png'
+import CP6 from '../assets/CP6.png'
+import CP7 from '../assets/CP7.png'
+
 
 export const projects = [
   // Existing Projects
@@ -584,31 +592,33 @@ export const projects = [
   //     },
   //   ],
   // },
-  // {
-  //   _id: 22,
-  //   title: "Healthcare Management System",
-  //   category: "Software Development",
-  //   description: "System for managing healthcare records and appointments.",
-  //   technologies: "React, Node.js, PostgreSQL",
-  //   image: "https://via.placeholder.com/300x200?text=Healthcare+System",
-  //   stats: {
-  //     monthlyViews: 1200,
-  //     downloads: 300,
-  //     likes: 80,
-  //   },
-  //   comments: [
-  //     {
-  //       id: 1,
-  //       user: "Ruby Collins",
-  //       comment: "Helps streamline patient appointments efficiently.",
-  //     },
-  //     {
-  //       id: 2,
-  //       user: "Evelyn Murphy",
-  //       comment: "Would love to see a mobile app version for patients.",
-  //     },
-  //   ],
-  // }
+{
+  "_id": 22,
+  "title": "Healthcare Management System",
+  "category": "Software Development",
+  "description": "Healthcare Management System is a comprehensive software solution designed to streamline the management of healthcare records and appointments. Built with cutting-edge technologies like React, Node.js, Appwrite, Trilio, and Next.js, this system offers an all-in-one platform for patients, doctors, and administrators to efficiently handle various healthcare processes. Patients can easily register, manage profiles, and book appointments, while administrators can manage, schedule, and confirm appointments with ease. The system emphasizes security, ensuring that all patient records are securely stored and accessible only to authorized users. With a user-friendly interface and responsive design, it provides a seamless experience across all devices. The platform also integrates performance monitoring tools, ensuring a smooth and uninterrupted user experience. Ideal for healthcare providers looking to modernize operations and improve patient care.",
+  "technologies": "React, Node.js, Appwrite, Trilio, Next Js",
+  "image": CP6,
+  "images": [CP6, CP4, CP3, CP2, CP5, CP7],
+  "stats": {
+    "monthlyViews": 1200,
+    "downloads": 300,
+    "likes": 80
+  },
+  "comments": [
+    {
+      "id": 1,
+      "user": "Ruby Collins",
+      "comment": "Helps streamline patient appointments efficiently."
+    },
+    {
+      "id": 2,
+      "user": "Evelyn Murphy",
+      "comment": "Would love to see a mobile app version for patients."
+    }
+  ]
+}
+
 ];
 
 
