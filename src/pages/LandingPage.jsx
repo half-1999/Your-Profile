@@ -14,6 +14,14 @@ import MathQuiz from '../assets/MathQuiz.png'
 import TechJobs from '../assets/TechJobs.png'
 import portfolioReact from '../assets/portfolioReact.png'
 import PortFolio from '../assets/Portfolio.png'
+import CP2 from '../assets/CP2.png'
+import CP3 from '../assets/CP3.png'
+import CP4 from '../assets/CP4.png'
+import CP5 from '../assets/CP5.png'
+import CP6 from '../assets/CP6.png'
+import Blog1 from '../assets/Blog1.png'
+import Blog2 from '../assets/Blog2.png'
+import Blog3 from '../assets/Blog3.png'
 import { FaAws, FaBriefcase, FaDocker, FaGraduationCap, FaJsSquare, FaProjectDiagram, FaTrophy } from "react-icons/fa";
 import { introductionData } from "../utils/data";
 import { SiAngular, SiD3Dotjs, SiElectron, SiFirebase, SiMysql, SiNextdotjs, SiPostman, SiRedis, SiTypescript } from "react-icons/si";
@@ -27,18 +35,25 @@ import { BsFillGearFill } from "react-icons/bs";
 const LandingImages = {
   title: "Landing Image",
   images: [
+    CP6,
+    Blog1,
     portfolioReact,
     PtacDashBoard,
+    CP5,
     BajajChetak,
     Shikshamitra,
+    Blog2,
     ArtificialEdu,
+    CP4,
     Erthpot,
     Ados,
     HitTheBlack,
+    CP3,
     MathQuiz,
     TechJobs,
+    Blog3,
     PortFolio,
-
+    CP2,
   ]
 };
 function LandingPage() {
