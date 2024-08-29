@@ -24,6 +24,7 @@ import {
 import { BsFillGearFill } from "react-icons/bs";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import Resume from '../Components/About/Resume'
+import AboutImg from '../assets/Banner.jpg'
 const AboutPage = () => {
   const handleResume = () => {
     window.open('https://drive.google.com/file/d/1YskO4VNHZEvAMU00c5eSoaYK69NHr2gk/view?usp=sharing')
@@ -33,7 +34,7 @@ const AboutPage = () => {
       {/* Introduction */}
       <div className="bg-white rounded-2xl shadow-lg mb-2 mx-auto">
         
-        <img src="src/assets/Banner.jpg" className="rounded-lg mb-5"/>
+        <img src={AboutImg} className="rounded-lg mb-5"/>
         <div className="space-y-2">
           <h3 className="text-xl font-semibold flex items-center justify-between text-[#15445a]">
             <div className="flex">

@@ -114,10 +114,10 @@ const SocialMediaIcons = () => {
         <a href="https://github.com/half-1999" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700 hover:mt-[-10px] duration-500" aria-label="GitHub">
           <FaGithub size={30} />
         </a>
-        <a href="#" className="text-green-500 hover:text-green-700 hover:mt-[-10px] duration-500" aria-label="Portfolio">
+        <a href="https://developer-aman-sharma.vercel.app" target='_blank' className="text-green-500 hover:text-green-700 hover:mt-[-10px] duration-500" aria-label="Portfolio">
           <span className="text-xl font-bold">🔗</span>
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 hover:mt-[-10px] duration-500" aria-label="Instagram">
+        <a href="https://instagram.com/half-engiiineeer" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 hover:mt-[-10px] duration-500" aria-label="Instagram">
           <FaInstagram size={30} />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 hover:mt-[-10px] duration-500" aria-label="Twitter">

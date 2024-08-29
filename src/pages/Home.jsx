@@ -74,7 +74,7 @@ export default function Home() {
       </div>
 
       {/* Right Content Area */}
-      <div className="md:col-span-3 lg:col-span-4 md:row-start-1 p-2 overflow-y-auto bg-white h-[98%] md:ml-[60%] lg:ml-[24%] min-w-full rounded-lg m-2 w-full sidebar" ref={contentRef}
+      <div className="md:col-span-3 lg:col-span-4 md:row-start-1 p-2 overflow-y-auto bg-white h-[98%] my-auto mx-auto md:ml-[60%] lg:ml-[25%] rounded-lg w-full sidebar" ref={contentRef}
 >
         <div className="space-y-1">
           {/* Route content based on URL */}
