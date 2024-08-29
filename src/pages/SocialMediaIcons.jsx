@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaYoutube, FaEnvelope } f
 
 const SocialMediaIcons = () => {
   // State to manage form inputs
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [responseMessage, setResponseMessage] = useState(''); // State to manage API response
@@ -12,10 +13,11 @@ const SocialMediaIcons = () => {
     e.preventDefault();
 
     // API URL
-    const apiUrl = 'https://day2nightcoding.onrender.com/api/user/contact'; 
+    const apiUrl = 'https://your-profile-server.vercel.app/api/contact/submit'; 
 
     // Data to be sent to the API
     const formData = {
+      name,
       email,
       message,
     };
@@ -34,9 +36,17 @@ const SocialMediaIcons = () => {
       if (response.ok) {
         const data = await response.json();
         setResponseMessage('Your message has been sent successfully!');
+        // Clear the response message after 2 seconds
+        setTimeout(() => {
+          setResponseMessage('');
+        }, 2000);
         console.log('Success:', data);
       } else {
         setResponseMessage('There was an issue sending your message.');
+        // Clear the response message after 2 seconds
+        setTimeout(() => {
+          setResponseMessage('');
+        }, 2000);
         console.log('Error:', response.statusText);
       }
     } catch (error) {
@@ -45,6 +55,7 @@ const SocialMediaIcons = () => {
     }
 
     // Clear the form fields
+    setName('');
     setEmail('');
     setMessage('');
   };
@@ -54,6 +65,15 @@ const SocialMediaIcons = () => {
       {/* Contact Form */}
       <form onSubmit={handleSubmit} className="flex flex-col gap-2 rounded-lg shadow-md">
         <div className="flex flex-col gap-1">
+          <input
+            id="name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="p-1 rounded border border-gray-300"
+            placeholder="Enter your Name"
+            required
+          />
           <input
             id="email"
             type="email"
@@ -68,7 +88,7 @@ const SocialMediaIcons = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="p-1 rounded border border-gray-300"
-            placeholder="Enter your Query..."
+            placeholder="Enter your Query / Feedback ..."
             rows="2"
             required
           />
