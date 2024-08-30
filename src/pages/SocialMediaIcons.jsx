@@ -108,7 +108,7 @@ const SocialMediaIcons = () => {
 
       {/* Social Media Links */}
       <div className="flex justify-center space-x-3 mt-1">
-        <a href="https://www.linkedin.com/in/aman-sharma-518597258" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:mt-[-10px] duration-500" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/developer-aman-sharma" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:mt-[-10px] duration-500" aria-label="LinkedIn">
           <FaLinkedin size={30} />
         </a>
         <a href="https://github.com/half-1999" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700 hover:mt-[-10px] duration-500" aria-label="GitHub">
