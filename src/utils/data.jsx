@@ -44,6 +44,9 @@ import CP4 from '../assets/CP4.png'
 import CP5 from '../assets/CP5.png'
 import CP6 from '../assets/CP6.png'
 import CP7 from '../assets/CP7.png'
+import SRS1 from '../assets/srs1.png'
+import SRS2 from '../assets/srs2.png'
+import SRS3 from '../assets/srs3.png'
 
 
 export const projects = [
@@ -414,31 +417,32 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   _id: 15,
-  //   title: "Task Manager",
-  //   category: "Web Development",
-  //   description: "Task and project management tool.",
-  //   technologies: "React, Firebase",
-  //   image: "https://via.placeholder.com/300x200?text=Task+Manager",
-  //   stats: {
-  //     monthlyViews: 1200,
-  //     downloads: 350,
-  //     likes: 90,
-  //   },
-  //   comments: [
-  //     {
-  //       id: 1,
-  //       user: "Isabella Harris",
-  //       comment: "Helps me stay organized. Very useful app!",
-  //     },
-  //     {
-  //       id: 2,
-  //       user: "Ethan Parker",
-  //       comment: "Integration with Firebase is seamless.",
-  //     },
-  //   ],
-  // },
+  {
+    _id: 15,
+    title: "SRS Softwares",
+    category: "Web Development",
+    description: "IT startup Service based company located in Noida.",
+    technologies: "React, Firebase, Tailwind CSS, Node Js , MongoDB",
+    image: SRS1,
+    images: [SRS1, SRS2, SRS3],
+    stats: {
+      monthlyViews: 1200,
+      downloads: 350,
+      likes: 90,
+    },
+    comments: [
+      {
+        id: 1,
+        user: "Isabella Harris",
+        comment: "Helps me stay organized. Very useful app!",
+      },
+      {
+        id: 2,
+        user: "Ethan Parker",
+        comment: "Integration with Firebase is seamless.",
+      },
+    ],
+  },
   {
     _id: 16,
     title: "Job Portal",
